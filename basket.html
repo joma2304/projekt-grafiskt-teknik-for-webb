@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Webbshop</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <img src="/images/webbshop_logo2.svg" class="logo"></img></a>
+        <!-- Meny knapp för att öppna mobilmenyn-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+        </button>
+        <!-- navigering -->
+        <nav id="nav-menu">
+            <!-- Knapp som visas om mobilmenyn är utfälld -->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+            </button>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="products.html">Produkter</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="basket.html" class="active">Varukorg <i class="fa-solid fa-cart-shopping active"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="rubrik">Varukorg</h1>
+        <table>
+            <thead>
+                <tr>
+                    <td>Bild</td>
+                    <td>Artikelnr</td>
+                    <td>Varunamn</td>
+                    <td>Antal</td>
+                    <td>Pris</td>
+                </tr>
+            </thead>
+            <tbody id="checkout"></tbody>
+        </table>
+        <div class="buybuttoncontainer">
+            <button class="buybutton" onclick="emptyBasket()">Töm varukorg</button>
+        </div>
+        <div class="checkout-button">
+        <h2 class="leveransuppgifter">Fyll i din leveransuppgifter nedan: </h2>
+        <form class="styled-form">
+            <label for="firstName">Förnamn:</label><br>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            <label for="lastName">Efternamn:</label><br>
+            <input type="text" id="lastName" name="lastName" required><br>
+
+            <label for="country">Land:</label><br>
+            <input type="text" id="country" name="country" required><br>
+
+            <label for="city">Stad:</label><br>
+            <input type="text" id="city" name="city" required><br>
+
+            <label for="address">Adress:</label><br>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="postalCode">Postnummer:</label><br>
+            <input type="text" id="postalCode" name="postalCode" required><br>
+
+        </form>
+        <div class="buybuttoncontainer">
+            <button class="buybutton" onclick="checkoutBasket()">Slutför köp</button>
+        </div>
+    </div>
+        <h5 class="frifrakt">Alltid fri frakt på alla beställningar</h5>
+    </main>
+    <footer>
+        <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Adress: låtsasvägen 32, Malmö</li>
+            <li><i class="fa-solid fa-phone"></i> Telefon: 041012345</li>
+            <li><i class="fa-regular fa-envelope"></i> Mail: kontakt@tekab.com</li>
+        </ul>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -315,8 +315,8 @@ footer ul li {
     max-width: 400px;
     width: 100%;
     background-color: white;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 50px;
   }
 
   .price {
@@ -394,7 +394,7 @@ footer ul li {
   }
 
   td:first-child {
-    width: 20%;
+    width: 200px;
   }
 
   th, td {

@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js" defer></script>
     <title>Webbshop</title>
 </head>
 
@@ -44,24 +46,25 @@
         <div class="top-right">Min varukorg:
             <span id="small-basket"></span>
         </div>
-        <h1 class="rubrik">Produkt 1</h1>
+        <h1 class="rubrik">Iphone 14</h1>
         <picture class="productpicture">
-            <img src="images/webbshop_logo2.svg" alt="Produkt 1">
+           <a href="images/iphone14_bigtest.png" data-lightbox="iphone-14"><img src="images/iphone14_small.png" alt="Iphone 14"></a>
         </picture>
-        <h3 class="price">Pris: 6999 :-</h3>
+        <h3 class="price">Pris: 11 999 :-</h3>
         <h3 class="productdescription">Produkt beskrivning</h3>
         <ul class="productspecs">
-            <li>6,1-tums Super Retina XDR-skärm</li>
-            <li>Ceramic Shield. Tål mer än alla smartphone-glas</li>
-            <li>5G för ultrasnabb streaming</li>
-            <li>Avancerat dubbelkamerasystem</li>
-            <li>Branschledande vattentålighet (IP68)</li>
-            <li>Avancerat dubbelkamerasystem med 12 MP (ultravidvinkel och vidvinkel), nattläge, Deep Fusion, Smart HDR
-                3 och 4K HDR-videoinspelning med Dolby Vision</li>
-            <li>TrueDepth-kamera med 12 MP, nattläge och inspelning av HDR-video i 4K med Dolby Vision</li>
+            <li>6,1-tums Super Retina XDR-skärm2 med ProMotion och en skärm som alltid är på</li>
+            <li>Med Dynamic Island, ett magiskt nytt sätt att samspela med iPhone</li>
+            <li>Huvudkamera med 48 MP för upp till 4x högre upplösning</li>
+            <li>Cinematiskt läge nu i 4K Dolby Vision med upp till 30 bilder/s</li>
+            <li>Med actionläget filmar du stadigare i alla lägen</li>
+            <li>Batteri som räcker hela dagen och upp till 23 timmars videouppspelning</li>
+            <li>A16 Bionic, det ultimata smartphonechippet. Supersnabb 5G-uppkoppling</li>
         </ul>
         <div class="buybuttoncontainer">
-            <button class="buybutton" onclick="addToBasket(this, '001', 'Vara #1', 6999, 'images/testvara.jpg', true), alert('Tillagd i varukorgen!')">Lägg till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="buybutton"
+                onclick="addToBasket(this, '001', 'Iphone 14', 12999, 'images/iphone14_varukorg.jpg', true), alert('Tillagd i varukorgen!')">Lägg
+                till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
         <h5 class="frifrakt">Alltid fri frakt på alla beställningar</h5>
     </main>

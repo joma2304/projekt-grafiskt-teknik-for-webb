@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js" defer></script>
     <title>Webbshop</title>
 </head>
 
@@ -44,24 +46,23 @@
         <div class="top-right">Min varukorg:
             <span id="small-basket"></span>
         </div>
-        <h1 class="rubrik">Produkt 3</h1>
+        <h1 class="rubrik">Airpods Pro</h1>
         <picture class="productpicture">
-            <img src="images/webbshop_logo2.svg" alt="Produkt 1">
+           <a href="images/airpodspro_bigtest.png" data-lightbox="airpods-pro"><img src="images/airpodspro_small.png" alt="Airpods Pro"></a>
         </picture>
-        <h3 class="price">Pris: 6999 :-</h3>
+        <h3 class="price">Pris: 2999 :-</h3>
         <h3 class="productdescription">Produkt beskrivning</h3>
         <ul class="productspecs">
-            <li>6,1-tums Super Retina XDR-skärm</li>
-            <li>Ceramic Shield. Tål mer än alla smartphone-glas</li>
-            <li>5G för ultrasnabb streaming</li>
-            <li>Avancerat dubbelkamerasystem</li>
-            <li>Branschledande vattentålighet (IP68)</li>
-            <li>Avancerat dubbelkamerasystem med 12 MP (ultravidvinkel och vidvinkel), nattläge, Deep Fusion, Smart HDR
-                3 och 4K HDR-videoinspelning med Dolby Vision</li>
-            <li>TrueDepth-kamera med 12 MP, nattläge och inspelning av HDR-video i 4K med Dolby Vision</li>
+            <li>AirPods Pro drivs av Apples H2-chip som tar avancerad ljudkvalitet till en ny nivå. Chippet gör de bästa
+                funktionerna i AirPods Pro ännu bättre, från smartare brusreducering till överlägset tredimensionellt
+                ljud och batteritid. </li>
+            <li>Det specialbyggda högtalarelementet med låg distortion och den specialbyggda förstärkaren ger ren, klar
+                diskant och djup, fyllig bas. Ljudet är mer levande och detaljrikt än någonsin</li>
+            <li>Adaptivt ljud blandar transparens och aktiv brusreducering på ett dynamiskt sätt, så att du får den
+                bästa ljudupplevelsen i alla lägen. </li>
         </ul>
         <div class="buybuttoncontainer">
-            <button class="buybutton" onclick="addToBasket(this, '003', 'Vara #3', 6999, 'images/testvara.jpg', true), alert('Tillagd i varukorgen!')">Lägg till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="buybutton" onclick="addToBasket(this, '003', 'Airpods Pro', 2999, 'images/airpodspro_varukorg.jpg', true), alert('Tillagd i varukorgen!')">Lägg till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
         <h5 class="frifrakt">Alltid fri frakt på alla beställningar</h5>
     </main>

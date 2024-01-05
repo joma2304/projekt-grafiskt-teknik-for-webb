@@ -47,10 +47,14 @@
             <span id="small-basket"></span>
         </div>
         <h1 class="rubrik">Airpods Pro</h1>
-        <picture class="productpicture">
-           <a href="images/airpodspro_bigtest.png" data-lightbox="airpods-pro"><img src="images/airpodspro_small.png" alt="Airpods Pro"></a>
-        </picture>
-        <h3 class="price">Pris: 2999 :-</h3>
+        <a href="images/airpodspro_bigtest.png" data-lightbox="airpods-pro">
+            <picture class="productpicture">
+                <source srcset="images/airpodspro_big.webp" type="image/webp">
+                <img src="images/airpodspro_small.png" alt="Airpods Pro">
+                <a href="images/airpodsproclosed_big.png" data-lightbox="airpods-pro" class="hide"></a>
+            </picture>
+        </a>
+        <h3 class="price">Pris: 1999 :-</h3>
         <h3 class="productdescription">Produkt beskrivning</h3>
         <ul class="productspecs">
             <li>AirPods Pro drivs av Apples H2-chip som tar avancerad ljudkvalitet till en ny nivå. Chippet gör de bästa
@@ -62,7 +66,7 @@
                 bästa ljudupplevelsen i alla lägen. </li>
         </ul>
         <div class="buybuttoncontainer">
-            <button class="buybutton" onclick="addToBasket(this, '003', 'Airpods Pro', 2999, 'images/airpodspro_varukorg.jpg', true), alert('Tillagd i varukorgen!')">Lägg till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="buybutton" onclick="addToBasket(this, '003', 'Airpods Pro', 1999, 'images/airpodspro_varukorg.jpg', true), alert('Tillagd i varukorgen!')">Lägg till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
         <h5 class="frifrakt">Alltid fri frakt på alla beställningar</h5>
     </main>

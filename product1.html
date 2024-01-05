@@ -47,10 +47,14 @@
             <span id="small-basket"></span>
         </div>
         <h1 class="rubrik">Iphone 14</h1>
-        <picture class="productpicture">
-           <a href="images/iphone14_bigtest.png" data-lightbox="iphone-14"><img src="images/iphone14_small.png" alt="Iphone 14"></a>
-        </picture>
-        <h3 class="price">Pris: 11 999 :-</h3>
+        <a href="images/iphone14_bigtest.png" data-lightbox="iphone-14">
+            <picture class="productpicture">
+                <source srcset="images/iphone14_big.webp" type="image/webp">
+                <img src="images/iphone14_small.png" alt="Iphone 14">
+                <a href="images/iphone14back_big.png" data-lightbox="iphone-14" class="hide"></a>
+            </picture>
+        </a>
+        <h3 class="price">Pris: 10 999 :-</h3>
         <h3 class="productdescription">Produkt beskrivning</h3>
         <ul class="productspecs">
             <li>6,1-tums Super Retina XDR-skärm2 med ProMotion och en skärm som alltid är på</li>
@@ -63,7 +67,7 @@
         </ul>
         <div class="buybuttoncontainer">
             <button class="buybutton"
-                onclick="addToBasket(this, '001', 'Iphone 14', 12999, 'images/iphone14_varukorg.jpg', true), alert('Tillagd i varukorgen!')">Lägg
+                onclick="addToBasket(this, '001', 'Iphone 14', 10999, 'images/iphone14_varukorg.jpg', true), alert('Tillagd i varukorgen!')">Lägg
                 till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
         <h5 class="frifrakt">Alltid fri frakt på alla beställningar</h5>

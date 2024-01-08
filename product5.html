@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <a href="index.html"> <img src="/images/webbshop_logo2.svg" class="logo"></img></a>
+        <a href="index.html"> <img src="/images/webbshop_logo2.svg" alt="Logotyp" class="logo"></a>
         <!-- Meny knapp för att öppna mobilmenyn-->
         <button class="menu-btn open" id="open-menu">
             <span class="menu-icon">
@@ -47,24 +47,38 @@
         <div class="top-right">Min varukorg:
             <span id="small-basket"></span>
         </div>
-        <h1 class="rubrik">Produkt 5</h1>
-        <picture class="productpicture">
-            <img src="images/webbshop_logo2.svg" alt="Produkt 1">
-        </picture>
-        <h3 class="price">Pris: 6999 :-</h3>
+        <h1 class="rubrik">Lenovo Thinkpad</h1>
+        <p class="tryckbild">Tryck på bilden för att starta bildspel</p>
+        <a href="images/lenovostangd_big.png" data-lightbox="lenovo">
+            <picture class="productpicture">
+                <source srcset="images/lenovostangd_big.webp" type="image/webp">
+                <img src="images/lenovostangd_small.png" alt="Lenovo Thinkpad">
+            </picture>
+        </a>
+        <a href="images/lenovooppen_big.png" data-lightbox="lenovo" class="hide"></a>
+        <h3 class="price">Pris: 8995 :-</h3>
         <h3 class="productdescription">Produkt beskrivning</h3>
         <ul class="productspecs">
-            <li>6,1-tums Super Retina XDR-skärm</li>
-            <li>Ceramic Shield. Tål mer än alla smartphone-glas</li>
-            <li>5G för ultrasnabb streaming</li>
-            <li>Avancerat dubbelkamerasystem</li>
-            <li>Branschledande vattentålighet (IP68)</li>
-            <li>Avancerat dubbelkamerasystem med 12 MP (ultravidvinkel och vidvinkel), nattläge, Deep Fusion, Smart HDR
-                3 och 4K HDR-videoinspelning med Dolby Vision</li>
-            <li>TrueDepth-kamera med 12 MP, nattläge och inspelning av HDR-video i 4K med Dolby Vision</li>
+            <li>14" IPS-skärmen har en utmärkt kompromiss mellan skärmyta och portabilitet. Den har en skarp detaljnivå
+                tack vare Full HD 1080p-upplösning. IPS-teknologi ger djupare kontrast, starkare färger och bredare
+                betraktningsvinklar. Och med antireflektionsfinishen kan du arbeta bekvämt även på platser med
+                artificiell belysning.</li>
+            <li>Det ikoniska Lenovo AccuType-tangentbordet har ergonomiskt välvda tangenter designade för maximal
+                precision och bekvämt skrivande.
+            </li>
+            <li>Med fingeravtrycksläsaren kan du logga in på systemet och autentisera med en enkel beröring.</li>
+            <li>Med upp till 16 timmars batteritid kan du lämna laddaren hemma för dagen. Och med en snabb Lenovo 65W
+                USB-C-laddare får du upp till 80% batteri på en timme. Perfekt för när du exempelvis vill lämna datorn
+                på laddning över lunchen.
+            </li>
+            <li>Den 256 GB supersnabba SSD-lagringsenheten startar upp system och laddar program på bara några sekunder.
+            </li>
+            <li>HDMI 1.4b-uttaget kan anslutas till en HD-TV eller projektor för att visa foton och videor i upp till Full HD 1080p-upplösning på stor skärm.</li>
         </ul>
         <div class="buybuttoncontainer">
-            <button class="buybutton" onclick="addToBasket(this, '005', 'Vara #5', 6999, 'images/testvara.jpg', true), alert('Tillagd i varukorgen!')">Lägg till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="buybutton"
+                onclick="addToBasket(this, '005', 'Lenovo Thinkpad', 8995, 'images/lenovostangd_varukorg.png', true), alert('Tillagd i varukorgen!')">Lägg
+                till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
         <h5 class="frifrakt">Alltid fri frakt på alla beställningar</h5>
     </main>

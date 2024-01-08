@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <a href="index.html"> <img src="/images/webbshop_logo2.svg" class="logo"></img></a>
+        <a href="index.html"> <img src="/images/webbshop_logo2.svg" alt="Logotyp" class="logo"></a>
         <!-- Meny knapp för att öppna mobilmenyn-->
         <button class="menu-btn open" id="open-menu">
             <span class="menu-icon">
@@ -47,24 +47,32 @@
         <div class="top-right">Min varukorg:
             <span id="small-basket"></span>
         </div>
-        <h1 class="rubrik">Produkt 4</h1>
-        <picture class="productpicture">
-            <img src="images/webbshop_logo2.svg" alt="Produkt 1">
-        </picture>
-        <h3 class="price">Pris: 6999 :-</h3>
+        <h1 class="rubrik">Macbook Pro</h1>
+        <p class="tryckbild">Tryck på bilden för att starta bildspel</p>
+        <a href="images/macbookstangd_big.png" data-lightbox="macbook-pro">
+            <picture class="productpicture">
+                <source srcset="images/macbookstangd_big.webp" type="image/webp">
+                <img src="images/macbookstangd_small.png" alt="Macbook Pro">
+            </picture>
+        </a>
+        <a href="images/macbookoppen_big.png" data-lightbox="macbook-pro" class="hide"></a>
+        <h3 class="price">Pris: 13 999 :-</h3>
         <h3 class="productdescription">Produkt beskrivning</h3>
         <ul class="productspecs">
-            <li>6,1-tums Super Retina XDR-skärm</li>
-            <li>Ceramic Shield. Tål mer än alla smartphone-glas</li>
-            <li>5G för ultrasnabb streaming</li>
-            <li>Avancerat dubbelkamerasystem</li>
-            <li>Branschledande vattentålighet (IP68)</li>
-            <li>Avancerat dubbelkamerasystem med 12 MP (ultravidvinkel och vidvinkel), nattläge, Deep Fusion, Smart HDR
-                3 och 4K HDR-videoinspelning med Dolby Vision</li>
-            <li>TrueDepth-kamera med 12 MP, nattläge och inspelning av HDR-video i 4K med Dolby Vision</li>
+            <li>M2-chip med senaste generationens processorkraft, grafikprestanda och maskininlärning</li>
+            <li>Med snabbare åttakärnig processor och tiokärnig grafikprocessor kan användaren plöja igenom krävande arbetsflöden
+            </li>
+            <li>16-kärnig Neural Engine för avancerade maskininlärningsuppgifter
+            </li>
+            <li>Med upp till 24 GB snabbare enhetligt minne går allt snabbt och smidigt</li>
+            <li>Det går upp till 43 procent snabbare att kombinera bilder till panoramabilder </li>
+            <li>Upp till 39 procent högre prestanda i spel </li>
+            <li>Aktiv kylning håller prestandan på en konstant hög nivå</li>
         </ul>
         <div class="buybuttoncontainer">
-            <button class="buybutton" onclick="addToBasket(this, '004', 'Vara #4', 6999, 'images/testvara.jpg', true), alert('Tillagd i varukorgen!')">Lägg till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="buybutton"
+                onclick="addToBasket(this, '004', 'Macbook Pro', 13999, 'images/macbookstangd_varukorg.png', true), alert('Tillagd i varukorgen!')">Lägg
+                till i varukorg <i class="fa-solid fa-cart-shopping"></i></button>
         </div>
         <h5 class="frifrakt">Alltid fri frakt på alla beställningar</h5>
     </main>

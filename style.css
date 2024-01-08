@@ -260,11 +260,11 @@ footer ul li {
 }
 
 /*Styling för produkter sidan*/
-
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: start;
 }
 
 .product {
@@ -321,6 +321,11 @@ footer ul li {
 }
 
 /*Styling för specifik produkt*/
+
+.tryckbild {
+  text-align: center;
+  color: white;
+}
 
 .productpicture {
   display: flex;
@@ -500,7 +505,7 @@ tbody {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   .top-right {
     font-size: 75%;
   }

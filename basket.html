@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Varukorg</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
@@ -55,35 +56,37 @@
             </thead>
             <tbody id="checkout"></tbody>
         </table>
-        <div class="buybuttoncontainer">
-            <button class="buybutton" onclick="emptyBasket()">Töm varukorg</button>
+        <div class="buybuttoncontainer checkout-button">
+            <button class="emptybutton" onclick="emptyBasket()">Töm varukorg <i
+                    class="fa-regular fa-trash-can"></i></button>
         </div>
-        <div class="checkout-button">
-        <h2 class="leveransuppgifter">Fyll i din leveransuppgifter nedan: </h2>
-        <form class="styled-form">
-            <label for="firstName">Förnamn:</label><br>
-            <input type="text" id="firstName" name="firstName" required><br>
+        <div>
+            <h2 class="leveransuppgifter">Fyll i dina leveransuppgifter nedan: </h2>
+            <form class="styled-form">
+                <label for="firstName">Förnamn:</label><br>
+                <input type="text" id="firstName" name="firstName" required><br>
 
-            <label for="lastName">Efternamn:</label><br>
-            <input type="text" id="lastName" name="lastName" required><br>
+                <label for="lastName">Efternamn:</label><br>
+                <input type="text" id="lastName" name="lastName" required><br>
 
-            <label for="country">Land:</label><br>
-            <input type="text" id="country" name="country" required><br>
+                <label for="country">Land:</label><br>
+                <input type="text" id="country" name="country" required><br>
 
-            <label for="city">Stad:</label><br>
-            <input type="text" id="city" name="city" required><br>
+                <label for="city">Stad:</label><br>
+                <input type="text" id="city" name="city" required><br>
 
-            <label for="address">Adress:</label><br>
-            <input type="text" id="address" name="address" required><br>
+                <label for="address">Adress:</label><br>
+                <input type="text" id="address" name="address" required><br>
 
-            <label for="postalCode">Postnummer:</label><br>
-            <input type="text" id="postalCode" name="postalCode" required><br>
+                <label for="postalCode">Postnummer:</label><br>
+                <input type="text" id="postalCode" name="postalCode" required><br>
 
-        </form>
-        <div class="buybuttoncontainer">
-            <button class="buybutton" onclick="checkoutBasket()">Slutför köp</button>
+            </form>
+            <div class="buybuttoncontainer checkout-button">
+                <button class="buybutton" onclick="checkoutBasket()">Slutför köp <i
+                        class="fa-regular fa-circle-check"></i></button>
+            </div>
         </div>
-    </div>
         <h5 class="frifrakt">Alltid fri frakt på alla beställningar</h5>
     </main>
     <footer>

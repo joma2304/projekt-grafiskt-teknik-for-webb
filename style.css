@@ -81,6 +81,8 @@ nav li:hover {
 .menu-btn:hover {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+  border-radius: 50px;
+  transition: ease-in 0.3s;
 }
 
 
@@ -267,12 +269,18 @@ footer ul li {
 
 .product {
   max-width: 350px;
-  background-color: #fff;
-  border-radius: 5px;
+  background-color: white;
+  border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px;
   text-align: center;
   padding: 10px;
+}
+
+.product picture img:hover {
+  border-radius: 50px;
+  border: solid #1A7F90 10px !important;
+  transition: all 0.3s ease 0s;
 }
 
 .product picture img {
@@ -379,7 +387,24 @@ footer ul li {
 }
 
 .buybutton:hover {
-  background-color: #e29402;
+  color: white;
+  background-color: #b47501;
+}
+
+.emptybutton {
+  padding: 12px 30px;
+  background-color: #EC5C3F;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 120%;
+}
+
+.emptybutton:hover {
+  background-color: rgb(92, 0, 0);
+  color: white;
 }
 
 .frifrakt {
@@ -416,19 +441,19 @@ td {
   border: 1px solid #FFA500;
   padding: 8px;
   text-align: left;
-}
-
-thead {
-  background-color: rgb(221, 220, 220);
-}
-
-th {
-  background-color: rgb(221, 220, 220);
   font-weight: bold;
 }
 
+thead {
+  background-color: rgb(239, 239, 239);
+}
+
+th {
+  background-color: rgb(239, 239, 239)
+}
+
 tbody {
-  background-color: rgb(221, 220, 220);
+  background-color: rgb(239, 239, 239);
 }
 
 @media only screen and (max-width: 700px) {
@@ -465,8 +490,6 @@ tbody {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-
 
 /*Styling liten varukorg*/
 .top-right {

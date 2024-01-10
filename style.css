@@ -162,6 +162,11 @@ main {
 }
 
 /*Hem sida styling*/
+
+.headerpic {
+  width: 100%;
+}
+
 .rubrik {
   color: white;
   text-align: center;
@@ -185,23 +190,6 @@ main {
   margin-top: 3%;
   margin-bottom: 1%;
 }
-
-.bastsaljarepics {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-bottom: 5%;
-}
-
-.bastsaljarepics img {
-  max-width: 350px;
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-
 
 /*Footer styling*/
 
@@ -264,7 +252,6 @@ footer ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: start;
 }
 
 .product {
@@ -434,7 +421,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
-  column-width: 20%;
+  column-width: 20vw;
 }
 
 td:first-child {
@@ -443,7 +430,7 @@ td:first-child {
 
 th,
 td {
-  border: 1px solid #FFA500;
+  border: 2px solid #63CBDE;
   padding: 8px;
   text-align: left;
   font-weight: bold;
@@ -461,11 +448,23 @@ tbody {
   background-color: rgb(239, 239, 239);
 }
 
+.checkout-sum {
+  text-align: center;
+}
+
 @media only screen and (max-width: 700px) {
   td:first-child {
     display: none;
   }
 
+}
+
+@media only screen and (min-width: 1100px) {
+  .table-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
 }
 
 .leveransuppgifter {
@@ -507,10 +506,33 @@ tbody {
 
 @media only screen and (max-width: 720px) {
   .top-right {
-    font-size: 75%;
+    font-size: 100%;
   }
 
   .rubrik {
     padding-top: 10%;
   }
+}
+
+/*Styling för reklamklipp*/
+.clipcontainer {
+  max-width: 650px;
+  width: 70%;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.iframeWrapper {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.iframeWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

@@ -48,7 +48,13 @@
             <span id="small-basket"></span>
         </div>
         <picture class="headerpic">
-
+            <source srcset="images/headerbild.webp" type="image/webp">
+            <source type="image/jpg" media="(min-width: 1521px)" srcset="images/headerbild_stor.jpg">
+            <source type="image/jpg" media="(min-width: 801px) and (max-width: 1520px)"
+                srcset="images/headerbild_mellan.jpg">
+            <source type="image/jpg" media="(max-width: 800px)" srcset="images/headerbild_liten.jpg">
+            <img class="headerpic" src="images/headerbild_mellan.jpg"
+                alt="Tekabs logotyp mellan två datorer och under ett par airpods pro">
         </picture>
         <h1 class="rubrik">Tekab</h1>
         <p class="heminfo">Välkommen till Tekab, en ledande elektronikbutik som erbjuder begangnade varor inom teknik
@@ -57,31 +63,19 @@
             hemunderhållning till avancerade professionella lösningar. Med ett brett sortiment av smartphones, laptops,
             smarta hemprodukter och audiovisuell utrustning, är vi stolta över att kunna erbjuda våra kunder den bästa
             tekniken på marknaden.</p>
-        <h3 class="bastsaljare">Våra bästsäljare</h3>
-        <div class="bastsaljarepics">
-            <a href="images/airpodspro_bigtest.png" data-lightbox="frontpic">
-                <picture>
-                    <source srcset="images/airpodspro_big.webp" type="image/webp">
-                    <img src="images/airpodspro_small.png" alt="Airpods Pro">
-                </picture>
-            </a>
-            <a href="images/iphone14_bigtest.png" data-lightbox="frontpic">
-                <picture>
-                    <source srcset="images/iphone14_big.webp" type="image/webp">
-                    <img src="images/iphone14_small.png" alt="AirPods första generation">
-                </picture>
-            </a>
-            <a href="images/airpods_bigtest.png" data-lightbox="frontpic">
-                <picture>
-                    <source srcset="images/airpods_big.webp" type="image/webp">
-                    <img src="images/airpods_small.png" alt="produkt 1">
-                </picture>
-            </a>
+        <h3 class="bastsaljare">Kolla in vår senaste reklamfilm nedan</h3>
+        <div class="clipcontainer">
+            <div class="iframeWrapper">
+                <iframe src="https://www.youtube.com/embed/yQoM-oHqP5g?si=SEjtx_4q-3DFS1-A" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </div>
+        <h5 class="frifrakt">Alltid fri frakt på alla beställningar</h5>
     </main>
     <footer>
         <ul>
-            <li><i class="fa-solid fa-location-dot"></i> Adress: låtsasvägen 32, Malmö</li>
+            <li><i class="fa-solid fa-location-dot"></i> Adress: Låtsasvägen 32, Malmö</li>
             <li><i class="fa-solid fa-phone"></i> Telefon: 041012345</li>
             <li><i class="fa-regular fa-envelope"></i> Mail: kontakt@tekab.com</li>
         </ul>
